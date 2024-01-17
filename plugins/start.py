@@ -11,16 +11,16 @@ from helper.database import  insert ,find_one,used_limit,usertype,uploadlimit,ad
 from pyrogram.file_id import FileId
 from helper.database import daily as daily_
 from helper.date import add_date ,check_expi
-CHANNEL = os.environ.get('CHANNEL',"")
+CHANNEL = os.environ.get('CHANNEL',"-1001871354889")
 import datetime
 from datetime import date as date_
-STRING = os.environ.get("STRING","")
-log_channel = int(os.environ.get("LOG_CHANNEL",""))
-token = os.environ.get('TOKEN','')
+STRING = os.environ.get("STRING","BQE_M_YAov_-48Y3a1LuI0Xe7do2XCh7lu1dodZoO1cTtR7xNKXcpguSuFDYxqvflFm4nPEeaC1a6gNNxtAj_-i3NuLIMv6MF-bpu71royeKlp7yUeG0Pe55kghXTLkp6ETpzeu27jsEiJCrJUbZ20ax9OrV9Mx4-urvf3yqLEXafVL6h6hV883q8pPVhYHxXX_Tm-LFuFWsCehZLVTlgNPyHnXXOEq_3aCp6sPybR265zLt0t9kVAnSd1JkUvNpp5d5Guu1XQ-K3LKePo3V9vqW__ohTC3xXJVVWoqi7CqzGfkTxxIt1McosfiQDDy5FnL2toBO1GQuXfhT5sRjU-2I1UdR0gAAAAGfW0-BAA")
+log_channel = int(os.environ.get("LOG_CHANNEL","-1002075597584"))
+token = os.environ.get('TOKEN','6663025289:AAEA_-gCBnIdV3TPGZ3CTnI78lvZqkWfep8')
 botid = token.split(':')[0]
 
-DB_NAME = os.environ.get("DB_NAME","")
-DB_URL = os.environ.get("DB_URL","")
+DB_NAME = os.environ.get("DB_NAME","@cluster0")
+DB_URL = os.environ.get("DB_URL","mongodb+srv://Dream:Dream@cluster0.vfstdts.mongodb.net/?retryWrites=true&w=majority")
 mongo = pymongo.MongoClient(DB_URL)
 db = mongo[DB_NAME]
 dbcol = db["promo"]
